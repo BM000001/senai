@@ -1,0 +1,266 @@
+/* Resetando margens e padding para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    margin: 0;
+    justify-content: start;
+    align-items: center;
+    background: rgb(0, 92, 164);
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar img {
+    margin: 0;
+}
+
+/* Menu de navegação */
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Menu responsivo */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* altura da navbar */
+        left: 0;
+        color: white;
+        background: rgb(0, 92, 164);
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Título da página */
+h1 {
+    text-align: center;
+    padding: 5%;
+    color: rgba(96, 165, 250);
+}
+
+
+/* Estilo para a seção de cursos */
+.cursos {
+    display: flex;
+    flex-direction: column; /* Coloca as seções de cursos em coluna */
+    justify-content: flex-start;
+    align-items: center; /* Centraliza o conteúdo */
+    min-height: 80vh;
+    padding: 0 20px; /* Padding para não deixar encostar nas bordas */
+    gap: 30px; /* Espaçamento entre as seções */
+}
+
+/* Contêiner que agrupa os cursos (seções) */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cursos "quebrem" para a próxima linha */
+    justify-content: center; /* Centraliza os cursos horizontalmente */
+    gap: 30px; /* Espaçamento entre os cursos */
+    width: 100%;
+    max-width: 1200px; /* Limita a largura do container */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 5%;
+
+}
+
+/* Estilo para cada box de curso */
+.container .box {
+    position: relative;
+    width: 360px; /* Largura fixa */
+    height: 360px; /* Altura fixa */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: var(--clr);
+    transition: 0.5s;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: rgba(60, 96, 167, 0.76);
+
+
+}
+
+/* Efeitos de hover */
+.container .box:hover {
+    top: 100px;
+}
+
+.container .box::before {
+    content: '';
+    position: absolute;
+    inset: 30px;
+    border: 5px solid #0000009f;
+    border-radius: 20px;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.container .box:hover::before {
+    inset: -200px 30px 30px 30px;
+}
+
+/* Estilo da imagem dentro do box */
+.container .box img {
+    position: absolute;
+    z-index: 10;
+    top: 120px;
+    max-width: 120px;
+    transition: 0.5s;
+}
+
+.container .box:hover img {
+    top: -150px;
+}
+
+/* Conteúdo dentro do box */
+.container .box .content {
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container .box:hover .content {
+    opacity: 1;
+}
+
+.container .box .content h2 {
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+}
+
+.container .box .content p {
+    color: #000;
+    text-align: center;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.container .box .content a {
+    position: relative;
+    top: 20px;
+    padding: 10px 30px;
+    background: #fff;
+    display: inline-block;
+    color: rgb(60, 96, 167);
+    font-weight: 600;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Títulos das seções (Cursos de Aprendizagem Industrial, etc.) */
+.cursos h3 {
+    display: block;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgba(96, 165, 250);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Na tela pequena, os cursos ficam empilhados */
+    .container {
+        flex-direction: column; /* Coloca os cursos em uma coluna */
+        align-items: center;
+    }
+
+    .container .box {
+        width: 80%; /* Ajusta a largura das caixas para dispositivos pequenos */
+        margin-bottom: 20px;
+    }
+
+    .cursos h3 {
+        font-size: 2em; /* Diminui o tamanho do título para dispositivos pequenos */
+    }
+}
+
+
+.rodape{
+                   
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-top: 3%;
+
+    columns: 3;
+    column-width: 150px;
+    -moz-column-width: 150px;
+    -webkit-column-width: 150px;
+    
+    justify-content: space-between;
+}
+
+
+.rodape0 {
+    background-color: rgb(0, 92, 164);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Mantém o rodapé após o conteúdo */
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px; /* Distância do conteúdo anterior */
+}
+
+    .rodape0 p{
+        text-align: center;
+    }
+    .rodape-item {
+        flex: 1;
+    }
+    .rodape a{
+        color:white;
+    
+    display: block;
+    }

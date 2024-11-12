@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura a viewport para que a página seja responsiva em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização do SENAI P7</title> <!-- Título da página que aparece na aba do navegador -->
+    <style>
+        /* Estilos CSS para a página */
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif; /* Define a fonte utilizada no corpo da página */
+        }
+        /* Estilo para o div que contém o mapa */
+        #map {
+
+            height: 50%; /* Altura do mapa */
+            width: 100%;   /* Largura do mapa, ocupa 100% do espaço disponível */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Localização do SENAI P7</h1> <!-- Cabeçalho principal da página -->
+<div id="map"> <!-- Div que conterá o mapa -->
+    <!-- Iframe para embutir o Google Maps -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d978.5336814547195!2d-43.93821034381321!3d-19.919117752119863!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1730486805934!5m2!1spt-BR!2sbr" 
+        width="80%"   
+        height="500"   
+        style="border:0; 
+        allowfullscreen=""   
+        loading="lazy"     
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe> <!-- Fim do iframe -->
+</div>
+
+</body>
+</html>

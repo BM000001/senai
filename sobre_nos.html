@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="sN.css" />
+  </head>
+  <nav class="navbar">
+    <div class="logo"><img src="img/logo.png" alt="" width="24%"></div>
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre_nos.html">Sobre nós</a></li>
+        <li><a href="Cursos.html">Cursos</a></li>
+    </ul>
+</nav>
+
+  <body class="tech-bg text-gray-100">
+    <div class="relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-indigo-900 opacity-90"></div>
+            <div class="rotating-bg"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-6xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-100" id="mainTitle">Nossa Equipe</h1>
+            <div class="tech-line"></div>
+            <p class="text-xl text-center text-blue-100 max-w-3xl mx-auto" id="mainDesc">Conheça os profissionais que fazem do SENAI CTTI Belo Horizonte um centro de excelência em educação profissional e tecnológica.</p>
+        </div>
+    </div>
+
+    <!-- Team Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <!-- Gerência Section - Centralizada -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-12 text-blue-400">
+          Gerência
+        </h2>
+        <div class="flex justify-center">
+          <div class="team-card glass-card rounded-xl p-6 text-center max-w-md">
+            <div
+              class="profile-image-container relative w-48 h-48 mx-auto mb-4"
+            >
+              <img
+                src="/api/placeholder/192/192"
+                alt="Gerente"
+                class="rounded-full object-cover w-full h-full"
+              />
+              <!-- <div
+                class="absolute -bottom-2 -right-2 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center transform hover:rotate-180 transition-transform duration-500"
+              >
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              <!-- </div> estilo semi inutil -->
+            </div>
+            <h3 class="text-xl font-bold mb-2">Guilerme</h3>
+            <p class="text-blue-300">Gerente da Unidade</p>
+            <div class="tech-line"></div>
+            <p class="text-sm text-gray-400">
+              15 anos de experiência em gestão educacional
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Equipe Pedagógica Section -->
+<div class="mb-16">
+    <h2 class="text-3xl font-bold text-center mb-12 text-blue-400">
+      Equipe Pedagógica
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="team-card glass-card rounded-xl p-6 text-center">
+        <img
+          src="/api/placeholder/192/192"
+          alt="Coordenador"
+          class="rounded-full w-48 h-48 mx-auto mb-4 object-cover"
+        />
+        <h3 class="text-xl font-bold mb-2">Ana Santos</h3>
+        <p class="text-blue-300">Coordenadora Pedagógica</p>
+        <div class="tech-line"></div>
+        <p class="text-sm text-gray-400">Mestre em Educação</p>
+      </div>
+      <div class="team-card glass-card rounded-xl p-6 text-center">
+        <img
+          src="/api/placeholder/192/192"
+          alt="Supervisor"
+          class="rounded-full w-48 h-48 mx-auto mb-4 object-cover"
+        />
+        <h3 class="text-xl font-bold mb-2">Carlos Oliveira</h3>
+        <p class="text-blue-300">Supervisor Pedagógico</p>
+        <div class="tech-line"></div>
+        <p class="text-sm text-gray-400">
+          Especialista em Metodologias Ativas
+        </p>
+      </div>
+      <div class="team-card glass-card rounded-xl p-6 text-center">
+        <img
+          src="/api/placeholder/192/192"
+          alt="Coordenador"
+          class="rounded-full w-48 h-48 mx-auto mb-4 object-cover"
+        />
+        <h3 class="text-xl font-bold mb-2">Ana susu</h3>
+        <p class="text-blue-300">Coordenadora Pedagógica</p>
+        <div class="tech-line"></div>
+        <p class="text-sm text-gray-400">Mestre em pedagogia</p>
+      </div>
+    </div>
+  </div>
+  
+
+      <!-- Instrutores Section -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-12 text-blue-400">
+          Instrutores
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="team-card glass-card rounded-xl p-6 text-center">
+            <img
+              src="hudson.jfif"
+              alt="Instrutor"
+              class="rounded-full w-48 h-48 mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-xl font-bold mb-2">Hudson Reis</h3>
+            <p class="text-blue-300">Instrutor</p>
+            <div class="tech-line"></div>
+            <p class="text-sm text-gray-400">Desenvolvedor de Software</p>
+          </div>
+          <div class="team-card glass-card rounded-xl p-6 text-center">
+            <img
+              src="/api/placeholder/192/192"
+              alt="Instrutora"
+              class="rounded-full w-48 h-48 mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-xl font-bold mb-2">Patricia Costa</h3>
+            <p class="text-blue-300">Engenheira Eletricista</p>
+            <div class="tech-line"></div>
+            <p class="text-sm text-gray-400">Sistemas de Controle</p>
+          </div>
+          <div class="team-card glass-card rounded-xl p-6 text-center">
+            <img
+              src="/api/placeholder/192/192"
+              alt="Instrutor TI"
+              class="rounded-full w-48 h-48 mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-xl font-bold mb-2">Roberto Almeida</h3>
+            <p class="text-blue-300">Cientista da Computação</p>
+            <div class="tech-line"></div>
+            <p class="text-sm text-gray-400">Desenvolvimento Web</p>
+          </div>
+          <div class="team-card glass-card rounded-xl p-6 text-center">
+            <img
+              src="/api/placeholder/192/192"
+              alt="Instrutora TI"
+              class="rounded-full w-48 h-48 mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-xl font-bold mb-2">Luciana Ferreira</h3>
+            <p class="text-blue-300">Analista de Sistemas</p>
+            <div class="tech-line"></div>
+            <p class="text-sm text-gray-400">Banco de Dados</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secretaria Section -->
+      <div>
+        <h2 class="text-3xl font-bold text-center mb-12 text-blue-400">
+          Secretaria
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="team-card glass-card rounded-xl p-6 text-center">
+            <img
+              src="/api/placeholder/192/192"
+              alt="Coordenadora Admin"
+              class="rounded-full w-48 h-48 mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-xl font-bold mb-2">Fernanda Lima</h3>
+            <p class="text-blue-300">Coordenadora Administrativa</p>
+            <div class="tech-line"></div>
+            <p class="text-sm text-gray-400">Gestão de Matrículas</p>
+          </div>
+          <div class="team-card glass-card rounded-xl p-6 text-center">
+            <img
+              src="/api/placeholder/192/192"
+              alt="Assistente Admin"
+              class="rounded-full w-48 h-48 mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-xl font-bold mb-2">Paulo Rodrigues</h3>
+            <p class="text-blue-300">Assistente Administrativo</p>
+            <div class="tech-line"></div>
+            <p class="text-sm text-gray-400">Atendimento ao Aluno</p>
+          </div>
+          <div class="team-card glass-card rounded-xl p-6 text-center">
+            <img
+              src="/api/placeholder/192/192"
+              alt="Assistente Secretaria"
+              class="rounded-full w-48 h-48 mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-xl font-bold mb-2">Amanda Souza</h3>
+            <p class="text-blue-300">Assistente de Secretaria</p>
+            <div class="tech-line"></div>
+            <p class="text-sm text-gray-400">Gestão de Documentos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rodape0">
+      <div class="rodape">
+      <div class="um">
+      <img src="img/logo.png" alt="" width="24%" href="index. html">
+     <h4><b>Senai CTTI</b></h4>
+     <p>Site da unidade do SENAI CTTI</p>
+    </div>
+    <br>
+    <div class="dois">
+      <h4>links uteis</h4>
+      <a href="index.html">Novidades</a>
+      <a href="index.html">Difetenciais</a>
+      <a href="index.html">Local</a>
+    </div>
+    <br>
+    <div class="tres">
+      <h4>Entre em contato conosco:</h4>
+      <h5>E-mail: contato.senaictti@gmail.com</h5>
+      <h5>Telefone: 31 9 9999-9999</h5>
+    </div>
+    </div>
+    <p>&copy; 2024 SENAI CTTI</p>
+    </div>
+
+  </body>
+  <script src="script.js"></script>
+</html>

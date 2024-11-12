@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>img2</title>
+    <link rel="stylesheet" href="slide.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="slides" style="--img: url('img/01.jpeg')">
+                <div class="content">
+                    <h1>slide 06</h1>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('img/02.jpeg')">
+                <div class="content">
+                    <h1>slide 01</h1>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('img/03.jpeg')">
+                <div class="content"></div>
+            </div>
+            <div class="slides" style="--img: url('img/04.jpeg')">
+                <div class="content"></div>
+            </div>
+            <div class="slides" style="--img: url('img/05.jpeg')">
+                <div class="content"></div>
+            </div>
+            <div class="slides" style="--img: url('img/06.jpeg')">
+                <div class="content"></div>
+            </div>
+        </div>
+    </div>
+    <div class="buttons"> <span class="prev"></span> <span class="next"></span> </div>
+    <script> let next = document.querySelector('.next'); let prev = document.querySelector('.prev'); let slider = document.querySelector('.slider'); next.addEventListener('click', function () { let slides = document.querySelectorAll('.slides'); slider.appendChild(slides[0]); }); prev.addEventListener('click', function () { let slides = document.querySelectorAll('.slides'); slider.prepend(slides[slides.length - 1]); }); </script>
+    <script src="script.js" type="text/babel"></script>
+</body>
+
+</html>
